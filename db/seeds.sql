@@ -1,3 +1,3 @@
-INSERT INTO burgers (name) VALUES ("burger1");
-INSERT INTO burgers (name) VALUES ("burger2");
-INSERT INTO burgers (name) VALUES ("burger3");
+INSERT INTO burgers (burger_name) VALUES ("burger1");
+INSERT INTO burgers (burger_name) VALUES ("burger2");
+INSERT INTO burgers (burger_name) VALUES ("burger3");
