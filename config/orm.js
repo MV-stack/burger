@@ -1,14 +1,6 @@
 // Import MySQL connection.
 var connection = require("../config/connection");
 
-/* I got lost here: 
-In the `orm.js` file, create the methods that will execute the necessary MySQL commands in the controllers. These are the methods you will need to use in order to retrieve and store data in your database.
-
-     * `selectAll()`
-     * `insertOne()`
-     * `updateOne()`
-*/
-
 function printQuestionMarks(num) {
     var arr = [];
   
@@ -28,7 +20,7 @@ function printQuestionMarks(num) {
       var value = ob[key];
       // check to skip hidden properties
       if (Object.hasOwnProperty.call(ob, key)) {
-        // if string with spaces, add quotations (Lana Del Grey => 'Lana Del Grey')
+        // if string has spaces, add quotations to string
         if (typeof value === "string" && value.indexOf(" ") >= 0) {
           value = "'" + value + "'";
         }
@@ -73,7 +65,7 @@ function printQuestionMarks(num) {
         cb(result);
       });
     },
-    // An example of objColVals would be {name: panther, sleepy: true}
+    
     updateOne: function(table, objColVals, condition, cb) {
       var queryString = "UPDATE " + table;
   
@@ -93,5 +85,5 @@ function printQuestionMarks(num) {
     }    
   };
   
-  // Export the orm object for the model (cat.js).
+  // Export the orm object for the model (burger.js).
   module.exports = orm;
