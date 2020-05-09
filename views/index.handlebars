@@ -1,29 +1,23 @@
 <h1>Burger App</h1>
 
-<h2>Burgers that have been devoured!</h2>
-
-<ul>
-  {{#each burgers}}
-    {{#unless devoured}}
-<li>
-	{{name}}
-
-
-
-	<button class="eat-burger" data-id="{{id}}">EAT!</button>
-</li>
-    {{/unless}}
-  {{/each}}
-</ul>
-
 <h2>Burgers that have not been devoured!</h2>
 
 <ul>
   {{#each burgers}}
+    {{#unless devoured}}
+      {{burgers devoured=true}}
+    {{/unless}}
+  {{/each}}
+</ul>
+	<button class="eat-burger" data-id="{{id}}">EAT!</button>
+
+
+<h2>Burgers that have been devoured!</h2>
+
+<ul>
+  {{#each burgers}}
     {{#if devoured}}
-    <li>
-    {{burger_name}}
-    </li>
+      {{burgers devoured=false}}
     {{/if}}
   {{/each}}
 </ul>
