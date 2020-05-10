@@ -18,11 +18,13 @@ The Burger app uses MySQL, Node, Express, Handlebars and a homemade ORM. The app
 
 ![screenshot](/public/assets/Img/Screenshot.PNG)
 
-### Links
-Heroku Live Site [BurgerApp](https://quiet-hamlet-09046.herokuapp.com/)
-Github Repo [BurgerApp](https://github.com/MV-stack/burger)
+### Heroku Live Site
+ [BurgerApp](https://quiet-hamlet-09046.herokuapp.com/)
 
-## Technologies Used 
+### Github Repo
+ [BurgerApp](https://github.com/MV-stack/burger)
+
+### Technologies Used 
 
 - Node.js
 - JavaScript
